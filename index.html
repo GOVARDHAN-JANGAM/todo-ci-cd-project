@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple To-Do List application with automated CI/CD.">
+  <title>TaskFlow - To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="todo-card" aria-labelledby="app-title">
+      <h1 id="app-title">TaskFlow</h1>
+      <p class="subtitle">Organize your day, one task at a time.</p>
+      <div class="task-input">
+        <label class="sr-only" for="taskInput">New task</label>
+        <input id="taskInput" type="text" placeholder="What do you need to do?" maxlength="100">
+        <button id="addButton" type="button">Add Task</button>
+      </div>
+      <div class="task-summary">
+        <span id="taskCount">0 tasks remaining</span>
+        <button id="clearCompleted" type="button">Clear completed</button>
+      </div>
+      <ul id="taskList" aria-live="polite"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
