@@ -44,3 +44,7 @@ git push origin main
 ```
 
 Open the **Actions** tab in GitHub to verify the workflow. After deployment, open the GitHub Pages URL configured in the repository settings.
+
+
+## Deployment
+This project uses GitHub Actions to validate and deploy the site automatically after successful changes to the main branch.
